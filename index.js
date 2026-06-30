@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Three.js Interactive 3D Particle Space
     // -------------------------------------------------------------
     const canvas = document.getElementById('three-bg-canvas');
-    // Disable heavy 3D particle system on mobile/touch devices to prevent lag and battery drain
-    const isMobileDevice = window.innerWidth < 768 || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+    // Disable heavy 3D particle system on small mobile screens to prevent lag
+    const isMobileDevice = window.innerWidth < 768;
     
     if (canvas && typeof THREE !== 'undefined' && !isMobileDevice) {
         const scene = new THREE.Scene();
