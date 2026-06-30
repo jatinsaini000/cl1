@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Three.js Interactive 3D Particle Space
     // -------------------------------------------------------------
     const canvas = document.getElementById('three-bg-canvas');
-    if (canvas && typeof THREE !== 'undefined') {
+    // Disable heavy 3D particle system on mobile/touch devices to prevent lag and battery drain
+    const isMobileDevice = window.innerWidth < 768 || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+    
+    if (canvas && typeof THREE !== 'undefined' && !isMobileDevice) {
         const scene = new THREE.Scene();
         
         // Perspective Camera
