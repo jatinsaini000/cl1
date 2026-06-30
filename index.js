@@ -24,10 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Three.js Interactive 3D Particle Space
     // -------------------------------------------------------------
     const canvas = document.getElementById('three-bg-canvas');
-    // Disable heavy 3D particle system on small mobile screens to prevent lag
-    const isMobileDevice = window.innerWidth < 768;
     
-    if (canvas && typeof THREE !== 'undefined' && !isMobileDevice) {
+    if (canvas && typeof THREE !== 'undefined') {
         const scene = new THREE.Scene();
         
         // Perspective Camera
@@ -42,8 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-        // Generate Procedural Particle Geometry
-        const particlesCount = window.innerWidth < 768 ? 600 : 1500;
+        // Generate Procedural Particle Geometry (Highly optimized counts for mobile performance)
+        const isMobile = window.innerWidth < 768;
+        const particlesCount = isMobile ? 150 : 800;
         const positions = new Float32Array(particlesCount * 3);
         const originalPositions = [];
 
@@ -117,16 +116,18 @@ document.addEventListener('DOMContentLoaded', () => {
             
             gridHelper.rotation.y = elapsedTime * 0.005 + mouseX * 0.05;
 
-            // Subtle dynamic particle wave deformation
-            const posAttr = geometry.attributes.position;
-            for (let i = 0; i < particlesCount; i++) {
-                const i3 = i * 3;
-                const orig = originalPositions[i];
-                // Apply a simple sinusoidal wave offset based on coordinates
-                posAttr.array[i3] = orig.x + Math.sin(elapsedTime * orig.speed + orig.y * 0.1) * 0.5;
-                posAttr.array[i3 + 1] = orig.y + Math.cos(elapsedTime * orig.speed + orig.x * 0.1) * 0.5;
+            // Subtle dynamic particle wave deformation (Skip on mobile for 60fps performance)
+            if (!isMobile) {
+                const posAttr = geometry.attributes.position;
+                for (let i = 0; i < particlesCount; i++) {
+                    const i3 = i * 3;
+                    const orig = originalPositions[i];
+                    // Apply a simple sinusoidal wave offset based on coordinates
+                    posAttr.array[i3] = orig.x + Math.sin(elapsedTime * orig.speed + orig.y * 0.1) * 0.5;
+                    posAttr.array[i3 + 1] = orig.y + Math.cos(elapsedTime * orig.speed + orig.x * 0.1) * 0.5;
+                }
+                posAttr.needsUpdate = true;
             }
-            posAttr.needsUpdate = true;
 
             renderer.render(scene, camera);
         };
