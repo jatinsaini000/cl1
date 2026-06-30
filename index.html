@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://*.google.com https://*.googleapis.com https://*.gstatic.com; frame-src 'self' https://www.google.com; connect-src 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- SEO Optimization -->
+    <title>PSD Marketing Agency | Scale Your Digital Growth & Monetization</title>
+    <meta name="description" content="PSD Marketing Agency is a results-driven digital marketing agency specializing in YouTube growth, monetization, Facebook growth, paid promotions, and music artist scaling.">
+    <meta name="keywords" content="digital marketing agency, youtube monetization, channel growth, youtube SEO, facebook ads, music artist growth, paid promotions, PSD marketing Kaithal">
+    
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:title" content="PSD Marketing Agency | Scale Your Digital Growth">
+    <meta property="og:description" content="Scale your channels and drive results with proven YouTube growth strategies, monetization solutions, and targeted campaigns.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psdmarketing.in">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PSD Marketing Agency | Digital Growth">
+    <meta name="twitter:description" content="Specialized YouTube monetization and digital scaling strategies for creators and brands.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Project Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- 3D Particle Canvas Background -->
+    <canvas id="three-bg-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <span class="logo-accent">PSD</span> Marketing
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#work" class="nav-link">Our Work</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link nav-cta">Get Started</a>
+            </nav>
+            
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content scroll-reveal">
+                <div class="badge">Growth-Focused Digital Agency</div>
+                <h1 class="hero-title">
+                    We Scale Channels.<br>
+                    We <span class="gradient-text">Drive Results.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Accelerate your digital reach. We specialize in <span class="typing-text" id="typing-text">YouTube Growth</span>
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fa-solid fa-rocket"></i> Scale Now
+                    </a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to Explore</span>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section" id="stats">
+            <div class="stats-container grid-container">
+                <div class="stat-card scroll-reveal">
+                    <h3 class="stat-number" data-target="4">0</h3>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+                <div class="stat-card scroll-reveal">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p class="stat-label">Channels Monetized</p>
+                </div>
+                <div class="stat-card scroll-reveal">
+                    <h3 class="stat-number" data-target="10">0</h3>
+                    <p class="stat-label">Million+ Views Generated</p>
+                </div>
+                <div class="stat-card scroll-reveal">
+                    <h3 class="stat-number" data-target="98">0</h3>
+                    <p class="stat-label">Satisfaction Rate (%)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-container grid-container">
+                <div class="about-text scroll-reveal">
+                    <div class="section-tag">Who We Are</div>
+                    <h2 class="section-title">Turning Content Into Consistent Revenue</h2>
+                    <p class="about-description">
+                        PSD Marketing is a results-driven agency focused on YouTube growth, monetization, and social media scaling. We help creators and brands turn their content into revenue using proven, data-driven strategies and performance-based execution.
+                    </p>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check accent-icon"></i>
+                            <span>4+ Years in YouTube Growth & Monetization</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check accent-icon"></i>
+                            <span>Helped creators scale & monetize faster</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check accent-icon"></i>
+                            <span>Tailored SEO & Audience Target strategy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="founder-details" style="margin-top: 2rem; display: flex; align-items: center; gap: 1.5rem; background: rgba(255, 255, 255, 0.03); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); flex-wrap: wrap;">
+                        <img src="images/Screenshot 2026-06-30 200811.png" alt="Panchal Sonu - YouTube Specialist" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid var(--color-primary-neon);">
+                        <div style="flex: 1; min-width: 250px;">
+                            <h3 style="font-size: 1.5rem; color: var(--color-text); margin-bottom: 0.5rem;">Panchal Sonu (He/His)</h3>
+                            <h4 style="font-size: 1.1rem; color: var(--color-primary-neon); margin-bottom: 0.8rem;">YouTube Specialist</h4>
+                            <p style="color: var(--color-text-dim); font-size: 0.95rem; line-height: 1.5;">
+                                I have been working in YouTube growth and monetization for the past 4 years, helping creators turn their channels into consistent income sources. I specialize in channel optimization, content strategy, and solving growth issues that stop channels from scaling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual scroll-reveal">
+                    <!-- Glassmorphic Dashboard Showcase representing modern 3D depth -->
+                    <div class="dashboard-mockup tilt-element">
+                        <div class="mockup-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                            <span class="mockup-title">YT Analytics Simulator</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="metric-row">
+                                <div class="metric">
+                                    <span class="metric-title">Views</span>
+                                    <span class="metric-val text-green">+412%</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-title">Revenue</span>
+                                    <span class="metric-val text-orange">+$14,200</span>
+                                </div>
+                            </div>
+                            <div class="graph-container">
+                                <svg viewBox="0 0 100 40" class="graph-svg">
+                                    <defs>
+                                        <linearGradient id="graph-grad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="var(--color-primary-neon)" stop-opacity="0.4"/>
+                                            <stop offset="100%" stop-color="var(--color-primary-neon)" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0,35 Q15,20 30,28 T60,10 T90,5 L100,5 L100,40 L0,40 Z" fill="url(#graph-grad)"/>
+                                    <path d="M0,35 Q15,20 30,28 T60,10 T90,5 L100,5" fill="none" stroke="var(--color-primary-neon)" stroke-width="2"/>
+                                    <circle cx="90" cy="5" r="2" fill="var(--color-white)"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="section-header scroll-reveal">
+                <div class="section-tag text-center">Our Expertise</div>
+                <h2 class="section-title text-center">Services We Provide</h2>
+            </div>
+            
+            <div class="services-grid grid-container">
+                <!-- Service 1 -->
+                <div class="service-card tilt-element scroll-reveal">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-circle-play service-icon red-glow"></i>
+                    </div>
+                    <h3 class="service-name">YouTube Monetization</h3>
+                    <p class="service-text">
+                        Complete support to make your channel eligible. Strategy to achieve 1,000 subscribers and 4,000 watch hours. Monetization approval guidance + AdSense setup.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card tilt-element scroll-reveal">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-chart-line service-icon orange-glow"></i>
+                    </div>
+                    <h3 class="service-name">Channel Growth & Management</h3>
+                    <p class="service-text">
+                        Content strategy based on your niche. Full YouTube SEO optimization (titles, tags, descriptions). Thumbnail guidance, performance tracking, and end-to-end channel handling.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card tilt-element scroll-reveal">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-rectangle-ad service-icon blue-glow"></i>
+                    </div>
+                    <h3 class="service-name">Facebook Growth & Ads</h3>
+                    <p class="service-text">
+                        Page growth with targeted audience strategy. High-converting lead generation campaigns for businesses. Professional ad setup, testing, and scaling.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card tilt-element scroll-reveal">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-fire service-icon violet-glow"></i>
+                    </div>
+                    <h3 class="service-name">Paid Promotions</h3>
+                    <p class="service-text">
+                        Promote your content to the absolute right target audience. Increase reach, views, and authentic engagement to fast-track your channel and brand growth.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card tilt-element scroll-reveal">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-music service-icon green-glow"></i>
+                    </div>
+                    <h3 class="service-name">Music Artist Growth</h3>
+                    <p class="service-text">
+                        Organic YouTube growth tailored specifically for music channels. Release and marketing strategies for consistent growth. Build a loyal, active fanbase.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work / Portfolio Showcase Section -->
+        <section class="work-section" id="work">
+            <div class="section-header scroll-reveal">
+                <div class="section-tag text-center">Case Studies</div>
+                <h2 class="section-title text-center">Some Of Our Work</h2>
+            </div>
+            
+            <div class="portfolio-grid grid-container">
+                <!-- Case Study 1 -->
+                <div class="portfolio-item scroll-reveal">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/Screenshot%202026-06-30%20200921.png" alt="Work Screenshot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="portfolio-meta">
+                        <h4 class="portfolio-niche">Technology & Gadgets</h4>
+                        <h3 class="portfolio-title">10K to 120K Subscribers in 6 Months</h3>
+                        <p class="portfolio-desc">Implemented a content audit, dynamic thumbnail system, and custom SEO templates leading to explosive organic search traffic.</p>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="portfolio-item scroll-reveal">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/Screenshot%202026-06-30%20200947.png" alt="Work Screenshot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="portfolio-meta">
+                        <h4 class="portfolio-niche">Music & Entertainment</h4>
+                        <h3 class="portfolio-title">Organic Release Strategy for Indie Artist</h3>
+                        <p class="portfolio-desc">Optimized premiere tags and pushed Google Discovery promotions targeting similar artists, yielding 1.2M viral views in 45 days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="section-header scroll-reveal">
+                <div class="section-tag text-center">Reviews</div>
+                <h2 class="section-title text-center">What Our Clients Say</h2>
+            </div>
+
+            <div class="slider-wrapper scroll-reveal">
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card tilt-element">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">
+                            "Hi Sonu, just wanted to say I’m really happy with the results. Channel ka growth clearly visible hai ab. Monetization bhi smoothly ho gaya, thank you so much."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-red">NC</div>
+                            <div>
+                                <h4 class="client-name">Neetu Chanchal</h4>
+                                <p class="client-role">YouTube Creator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card tilt-element">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">
+                            "Bhai honestly I’m fully satisfied with your work. Views aur engagement dono improve hue hain kaafi. Acha kaam chal raha hai."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-blue">D</div>
+                            <div>
+                                <h4 class="client-name">Dev</h4>
+                                <p class="client-role">Channel Owner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card tilt-element">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">
+                            "Working with PSD Marketing Agency has been a great experience. They handled the monetization setup perfectly and guided me on Content Strategy."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-green">KP</div>
+                            <div>
+                                <h4 class="client-name">Kuldeep Panchal</h4>
+                                <p class="client-role">Vlogger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prev-slide" aria-label="Previous Testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="slider-btn next-btn" id="next-slide" aria-label="Next Testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Maps Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container grid-container">
+                <!-- Contact Form -->
+                <div class="contact-form-box scroll-reveal">
+                    <div class="section-tag">Get in Touch</div>
+                    <h2 class="section-title">Ready to Scale?</h2>
+                    <p class="contact-subtitle">Fill out the form below, and our team will get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name" minlength="2" maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="niche">Niche / Business Type</label>
+                            <select id="niche" name="niche">
+                                <option value="youtube-growth">YouTube Channel Growth</option>
+                                <option value="monetization">YouTube Monetization Support</option>
+                                <option value="facebook-ads">Facebook Ads & Growth</option>
+                                <option value="music-growth">Music Artist Promotion</option>
+                                <option value="other">Other Digital Growth</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your channel or project..." minlength="10" maxlength="1000"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Secure Message</button>
+                    </form>
+                    
+                    <!-- Secure message status container -->
+                    <div class="form-status" id="form-status"></div>
+                </div>
+
+                <!-- Info & Map -->
+                <div class="contact-info-box scroll-reveal">
+                    <div class="section-tag">Contact Details</div>
+                    <h2 class="section-title">Direct Connection</h2>
+                    
+                    <div class="info-links">
+                        <a href="https://wa.me/919717454286?text=Hi%20PSD%20Marketing,%20I%20want%20to%20grow%20my%20channel." target="_blank" rel="noopener noreferrer" class="info-item whatsapp-item">
+                            <i class="fa-brands fa-whatsapp info-icon"></i>
+                            <div>
+                                <span class="info-label">WhatsApp Us (Quick Reply)</span>
+                                <span class="info-value">+91 97174 54286</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+919717454286" class="info-item">
+                            <i class="fa-solid fa-phone info-icon"></i>
+                            <div>
+                                <span class="info-label">Call Directly</span>
+                                <span class="info-value">+91 97174 54286</span>
+                            </div>
+                        </a>
+                        
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot info-icon"></i>
+                            <div>
+                                <span class="info-label">Agency Location</span>
+                                <span class="info-value">Devigarh Rd, near Govt. School, Huda Sector 18, Kaithal, Haryana 136027</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map container (styled & sandboxed for safety) -->
+                    <div class="map-wrapper">
+                        <iframe 
+                            title="PSD Marketing Agency Google Maps Location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.117242270966!2d76.41167847629555!3d29.788537231215456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3911ae024564bf1d%3A0xe5323bb98d41e779!2sPSD%20Marketing%20Agency!5e0!3m2!1sen!2sin!4v1719660000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <nav class="bottom-nav">
+        <a href="#hero" class="bottom-nav-link active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="#services" class="bottom-nav-link">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Services</span>
+        </a>
+        <a href="#work" class="bottom-nav-link">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Work</span>
+        </a>
+        <a href="#contact" class="bottom-nav-link">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo"><span class="logo-accent">PSD</span> Marketing</a>
+                <p class="footer-desc">Professional digital growth agency transforming creator channels and brand presence globally.</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://www.youtube.com/results?search_query=panchal+sonu+vlogs" target="_blank" rel="noopener noreferrer" class="social-link yt" aria-label="Visit our YouTube channel"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/psdmarketingagency" target="_blank" rel="noopener noreferrer" class="social-link ig" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/panchalsonuvlogs/" target="_blank" rel="noopener noreferrer" class="social-link fb" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PSD Marketing Agency. All Rights Reserved.</p>
+            <p class="security-badge"><i class="fa-solid fa-shield-halved"></i> Secured & Optimized</p>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN with Integrity and Script Handoff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Local secure JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
